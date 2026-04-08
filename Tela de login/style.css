@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+    width: 100%;  
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.column {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left { 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-panel {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"], input[type="text"] {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: #000;
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+input[type="password"]:focus , input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
+
+input[type="submit"] {
+    width: 320px;
+    margin-top: 10px;
+    height: 40px;
+    border: 0;
+    background-color: #1e5eff;
+    border-radius: 4px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.action {
+    background-color: #FFF;
+    height: 60px;
+    border: 1px solid rgb(236, 234, 234 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.action p {
+    font-weight: bold;
+}
+
+.right {
+  width: 50%;
+  background: #1e5eff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px;
+}
+
+.imagen {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.texto h1 {
+    max-width: 500px;
+}
+
+.texto-pequeno{
+    max-width: 500px;
+} 
+
+.texto-pequeno p {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.checkbox-area {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 8px; /* espaço entre checkbox e texto */
+    margin-top: 10px;
+}
