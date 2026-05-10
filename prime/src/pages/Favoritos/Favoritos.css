@@ -1,0 +1,93 @@
+body{
+    background: #0f0f0f;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.meus-filmes{
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.meus-filmes h1{
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg,#fff,#ff2d2d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.meus-filmes ul{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 28px;
+}
+
+.meus-filmes ul li{
+    list-style: none;
+    background: #181818;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.35s;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.meus-filmes ul li:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.8),
+    0 0 20px rgba(255,0,0,0.2);
+}
+
+.meus-filmes img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.meus-filmes span{
+    display: block;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 70px;
+}
+
+.meus-filmes div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 18px;
+}
+
+.meus-filmes div a{
+    text-decoration: none;
+    background: #ff0000;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.meus-filmes div a:hover{
+    background: #cc0000;
+}
+
+.meus-filmes button{
+    border: none;
+    background: #2b2b2b;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.meus-filmes button:hover{
+    background: #ff0000;
+}
